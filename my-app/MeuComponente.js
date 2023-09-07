@@ -3,11 +3,11 @@ import { Text } from 'react-native';
 
 export default function MinMax(props){
     const {min,max} = props;
-
-    const maxValue = Math.max(parseInt(min), parseInt(max));
-    const minValue = Math.min(parseInt(max), parseInt(min));
+    const num_aleatorio =  Math.floor(Math.random() * (max - min + 1)) + min;
+    console.warn(props);
+ 
     
     return (
-        <Text> O valor {maxValue} é maior que {minValue} </Text>
+        <Text> Numero aleatório entre {min} e {max} é: {num_aleatorio} </Text>
     )
 }
