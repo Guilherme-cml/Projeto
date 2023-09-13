@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, View , Image} from 'react-native';
-import Profile from './Profile';
+import { StyleSheet, View ,  Text} from 'react-native';
+import Biscoito from './Biscoito';
+import Cronometro from './Cronometro';
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
 
       {/* <NumeroAleatorio min={1} max={60} /> */}
 
-      { < Profile/>}
+      { <Cronometro/>}
 
       {/* <Contador /> */}
 
@@ -34,9 +35,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: { 
-    padding: 35,
+    padding: 25,
     flex: 1,
-    backgroundColor: '#d1d1ff',
+   backgroundColor:'#9b93fa',
     alignItems: 'center',
     justifyContent: 'center',
   },
