@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View ,  Text} from 'react-native';
 import Biscoito from './Biscoito';
-import Cronometro from './Cronometro';
+
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
 
       {/* <NumeroAleatorio min={1} max={60} /> */}
 
-      { <Cronometro/>}
+      { <Biscoito  />}
 
       {/* <Contador /> */}
 
@@ -35,9 +35,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: { 
-    padding: 25,
+    padding: 20,
     flex: 1,
-   backgroundColor:'#9b93fa',
+   backgroundColor:'#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
