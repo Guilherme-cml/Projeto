@@ -1,44 +1,18 @@
-import React from 'react';
-import { StyleSheet, View ,  Text} from 'react-native';
-import Biscoito from './Biscoito';
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
+
+import { PaperProvider } from 'react-native-paper';
+import DrawerRoutes from './Ex_Lista/src/routes/Router';
 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <MeuComponente /> */}
-      {/* <MinMax min="10" max="20" /> */}
-
-      {/* <MeuComponente /> */}
-
-      {/* <NumeroAleatorio min={1} max={60} /> */}
-
-      { <Biscoito  />}
-
-      {/* <Contador /> */}
-
-      {/* <DigiteSeuNome /> */}
-
-      {/* <Pai /> */}
-
-      {/* <ComponenteControlado /> */}
-
-    
-
-
-
-
-
-    </View>
+    <PaperProvider>
+      <NavigationContainer>
+        <DrawerRoutes />
+      </NavigationContainer>
+    </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: { 
-    padding: 20,
-    flex: 1,
-   backgroundColor:'#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
